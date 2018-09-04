@@ -1,0 +1,23 @@
+executables:
+{
+	helloworld_18_07_00 = ( helloworld_18_07_00Component )
+}
+
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+
+	run:
+	{
+		( helloworld_18_07_00 )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K
